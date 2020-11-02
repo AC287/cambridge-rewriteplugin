@@ -57,7 +57,11 @@
 
     add_rewrite_rule(
       'products/categories/([^/]*)/?',
-      'index.php?pagename=products/categories&qurl=$matches[1]','top');
+      'index.php?pagename=products2/categories&qurl=$matches[1]','top');
+
+    add_rewrite_rule(
+      'products/([^/]*)/?',
+      'index.php?pagename=products&qurl=$matches[1]','top');
 
     // add_rewrite_rule(
     //   'products/categories/([^/]*)/([^/]*)/?',
